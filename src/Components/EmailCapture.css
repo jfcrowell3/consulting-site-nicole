@@ -1,0 +1,51 @@
+.email-element {
+  background-color: #000;
+  height: 87vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-container {
+  color: #fff;
+  width: auto;
+  margin: 0rem 20rem;
+}
+
+.email-container h2 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.email-container p {
+  font-size: 1.3rem;
+  margin-bottom: 4rem;
+}
+
+.email-container input {
+  color: #fff;
+  padding: 8px 20px;
+  background-color: #000;
+  min-width: 20rem;
+  width: 25vw;
+  height: 7vh;
+  border-radius: 2px;
+  margin-right: 10px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #fff;
+}
+
+.email-container button {
+  height: 7vh;
+  width: 13vw;
+  min-width: 20rem;
+}
+
+.email-container button:hover {
+  background-color: #8983c4;
+  border-color: #8983c4;
+}
