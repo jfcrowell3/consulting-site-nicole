@@ -1,6 +1,7 @@
 .about-me__container {
   /* background-color: #8983c4; */
-  background: url('../../public/images/hexbg2.jpeg') no-repeat center/cover;
+  background: #8983c4 url('../../public/images/hexbg2.jpeg') center/cover
+    no-repeat;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
