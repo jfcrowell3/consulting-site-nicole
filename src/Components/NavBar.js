@@ -1,30 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link as LinkS } from 'react-scroll';
+import { Link as LinkR } from 'react-router-dom';
 import './NavBar.css';
-// import logo from '../logo.png';
-import { Button } from './Button';
+import * as Scroll from 'react-scroll';
 
 const NavBar = () => {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  // window.addEventListener('load', showButton);
-  window.addEventListener('resize', showButton);
+  const scrollTop = () => Scroll.animateScroll.scrollToTop();
 
   return (
     <>
@@ -33,51 +19,82 @@ const NavBar = () => {
       </div>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <img src='/images/crown.png' />
+          <LinkR
+            to='/'
+            className='navbar-logo'
+            onClick={() => {
+              closeMobileMenu();
+              scrollTop();
+            }}
+          >
+            <img src='/images/crown.png' alt='purple crown logo' />
             <div className='logo-text'>
               <p className='logo-top'>Performance</p>
               <p className='logo-bottom'>Purple</p>
             </div>
-          </Link>
+          </LinkR>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <LinkS
+                to='home'
+                className='nav-links'
+                onClick={closeMobileMenu}
+                spy={true}
+                smooth={true}
+                offset={-125}
+                duration={500}
+              >
                 Home
-              </Link>
+              </LinkS>
             </li>
             <li className='nav-item'>
-              <Link
+              <LinkS
                 to='/services'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 Services
-              </Link>
+              </LinkS>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/courses'
+              <LinkS
+                to='the-process'
                 className='nav-links'
                 onClick={closeMobileMenu}
+                spy={true}
+                smooth={true}
+                offset={-317}
+                duration={500}
               >
-                Courses
-              </Link>
+                The Process
+              </LinkS>
+            </li>
+            <li className='nav-item'>
+              <LinkS
+                to='about-me'
+                className='nav-links'
+                onClick={closeMobileMenu}
+                spy={true}
+                smooth={true}
+                offset={-123}
+                duration={500}
+              >
+                About Me
+              </LinkS>
             </li>
             <li>
-              <Link
+              <LinkS
                 to='/sign-up'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                Sign Up
-              </Link>
+                Book A Call
+              </LinkS>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
       </nav>
     </>

@@ -1,18 +1,24 @@
 import React from 'react';
-import { Button } from './Button';
+import { useEffect } from 'react';
+// import { Button } from './Button';
 import './HeroSection.css';
 import '../App.css';
+import EmailCapture from './EmailCapture';
 
 const HeroSection = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className='hero-container'>
+    <div className='hero-container' id='home'>
       <video src='/videos/video-2.mp4' autoPlay loop muted />
       <h1>Creative Strategy. Done right.</h1>
       <p>
         Offering Full Stack Creative Strategy & Creative Operations for DTC
         Brands & Agencies.
       </p>
-      <div className='hero-btns'>
+      {/* <div className='hero-btns'>
         <Button
           className='btns'
           buttonStyle='btn--outline'
@@ -27,7 +33,8 @@ const HeroSection = () => {
         >
           GET STARTED
         </Button>
-      </div>
+      </div> */}
+      <EmailCapture />
     </div>
   );
 };

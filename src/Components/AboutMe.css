@@ -1,5 +1,6 @@
 .about-me__container {
-  background-color: #8983c4;
+  /* background-color: #8983c4; */
+  background: url('../../public/images/hexbg2.jpeg') no-repeat center/cover;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -14,7 +15,7 @@
   width: 100%;
 }
 
-section img {
+.about-me__img-container img {
   float: right;
   width: auto;
   height: 100%;
