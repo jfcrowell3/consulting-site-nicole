@@ -7,6 +7,10 @@
   padding: 4rem 4rem 0;
 }
 
+.footer-logo-text {
+  padding-left: 1vw;
+}
+
 .social-media-wrap {
   display: flex;
   justify-content: space-between;
@@ -35,7 +39,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  width: 6vw;
 }
 
 .social-icon-link:hover {

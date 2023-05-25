@@ -29,7 +29,7 @@ const Process = () => {
 
   return (
     <section className='process-section'>
-        <h1>The Process</h1>
+        <h1>The Game Plan</h1>
       <div className='process'>{process}</div>
     </section>
   );

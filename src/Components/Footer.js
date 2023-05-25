@@ -10,7 +10,7 @@ const Footer = () => {
       <section className='social-media'>
         <div className='social-media-wrap'>
           <Link to='/' className='social-logo'>
-            <img src='/images/crown.png' alt='purple crown logo'/>
+            <img src='/images/crown.png' alt='purple crown logo' />
             <div className='footer-logo-text'>
               <p className='logo-top'>Performance</p>
               <p className='logo-bottom'>Purple</p>
@@ -18,7 +18,7 @@ const Footer = () => {
           </Link>
           <small className='website-rights'> © All Rights Reserved</small>
           <div className='social-icons'>
-            <Link
+            {/* <Link
               className='social-icon-link facebook'
               to='/'
               target='_blank'
@@ -33,10 +33,10 @@ const Footer = () => {
               aria-label='Instagram'
             >
               <i className='fab fa-instagram' />
-            </Link>
+            </Link> */}
             <Link
               className='social-icon-link twitter'
-              to='/'
+              to='https://twitter.com/NicoleCrowell00'
               target='_blank'
               aria-label='Twitter'
             >
@@ -44,7 +44,7 @@ const Footer = () => {
             </Link>
             <Link
               className='social-icon-link twitter'
-              to='/'
+              to='https://www.linkedin.com/in/nicole-crowell/'
               target='_blank'
               aria-label='LinkedIn'
             >

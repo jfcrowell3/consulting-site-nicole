@@ -7,8 +7,8 @@ const EmailCapture = () => {
     <div className='email-container'>
       {/* <h2>Newsletter</h2> */}
       <p>
-        For weekly tips on how to improve your creative strategy sign up for my
-        newsletter!
+        Rise to your creative potential - Receive weekly inspiration with your
+        free newsletter subscription!
       </p>
       <form>
         <input

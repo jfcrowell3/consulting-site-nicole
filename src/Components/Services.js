@@ -9,7 +9,7 @@ const Services = () => {
   };
 
   return (
-    <section className='services-section'>
+    <section className='services-section' id='services'>
       <h1>Services</h1>
       <div className='services-container'>
         <div className='services-wrapper'>
@@ -34,7 +34,7 @@ const Services = () => {
         <div className='services-wrapper'>
           <h2>Recurring Services</h2>
           <div className='services-image'>
-            <img src='/images/img-2.jpg' alt='' />
+            <img src='/images/lightbulb.jpg' alt='Lightbulb in hand' />
           </div>
           <div className={readMore ? 'expanded-div' : 'hidden-div'}>
             <ul>
@@ -58,43 +58,3 @@ const Services = () => {
 };
 
 export default Services;
-
-// {
-//   /* {readMore ? ( */
-// }
-
-//  ) : (
-//         <section className='services-section'>
-//           <div className='services-container'>
-//             <div className='services-wrapper'>
-//               <h2>One-Time Services</h2>
-//               <div className='services-image'>
-//                 <img src='/images/img-1.jpg' alt='' />
-//               </div>
-//               <div className='expanded-div'>
-//                 <ul>
-//                   <li>Point 1</li>
-//                   <li>Point 1</li>
-//                   <li>Point 1</li>
-//                   <li>Point 1</li>
-//                 </ul>
-//               </div>
-//             </div>
-//             <div className='services-wrapper'>
-//               <h2>Recurring Services</h2>
-//               <div className='services-image'>
-//                 <img src='/images/img-2.jpg' alt='' />
-//               </div>
-//               <div className='expanded-div'>
-//                 <ul>
-//                   <li>Point 1</li>
-//                   <li>Point 1</li>
-//                   <li>Point 1</li>
-//                   <li>Point 1</li>
-//                 </ul>
-//               </div>
-//             </div>
-//           </div>
-//           <i className='fas fa-angle-up' onClick={handleClick} />
-//         </section>
-//       )}

@@ -15,7 +15,7 @@ const NavBar = () => {
   return (
     <>
       <div className='banner-container'>
-        <p>Initial visit discounts available</p>
+        <p>Get expert advice for free! Book your 15-minute call today</p>
       </div>
       <nav className='navbar'>
         <div className='navbar-container'>
@@ -52,9 +52,13 @@ const NavBar = () => {
             </li>
             <li className='nav-item'>
               <LinkS
-                to='/services'
+                to='services'
                 className='nav-links'
                 onClick={closeMobileMenu}
+                spy={true}
+                smooth={true}
+                offset={-110}
+                duration={500}
               >
                 Services
               </LinkS>
@@ -66,7 +70,7 @@ const NavBar = () => {
                 onClick={closeMobileMenu}
                 spy={true}
                 smooth={true}
-                offset={-317}
+                offset={-300}
                 duration={500}
               >
                 The Process
@@ -79,7 +83,7 @@ const NavBar = () => {
                 onClick={closeMobileMenu}
                 spy={true}
                 smooth={true}
-                offset={-123}
+                offset={-110}
                 duration={500}
               >
                 About Me

@@ -1,59 +1,4 @@
 export const processData = [
-  // {
-  //   url: '/images/handshake.jpeg',
-  //   title: 'Alignment',
-  //   steps: [
-  //     {
-  //       1: 'Account & Team Analysis',
-  //       2: 'Creative Angles Inventory',
-  //       3: 'Creative Audit & Evaluation',
-  //       4: 'Campaign Restructuring',
-  //       5: 'Team Structures',
-  //       6: "Alignment on Goals & KPI's For Success",
-  //     },
-  //   ],
-  // },
-  // {
-  //   url: '/images/lab.jpeg',
-  //   title: 'Research',
-  //   steps: [
-  //     {
-  //       1: 'Competitor Analysis',
-  //       2: 'Market Trends',
-  //       3: 'Customer Sentiment Analysis (NLP Report)',
-  //       4: 'Offer Research',
-  //       5: 'Avatar Development ',
-  //     },
-  //   ],
-  // },
-  // {
-  //   url: '/images/lightbulb.jpeg',
-  //   title: 'Ideation',
-  //   steps: [
-  //     {
-  //       1: "Highlight USP's",
-  //       2: 'Leading Ideation Session',
-  //       3: 'Generating Unique Angles & Hook Ideas',
-  //       4: 'Creating Congruent Ideas Per All Funnel Stages',
-  //       5: 'Offer Ideation',
-  //     },
-  //   ],
-  // },
-  // {
-  //   url: '/images/action.jpeg',
-  //   title: 'Production',
-  //   steps: [
-  //     {
-  //       1: 'Brief Creation',
-  //       2: 'Design Best Practices',
-  //       3: 'Copywriting Services',
-  //       4: 'Coordination On-Set',
-  //       5: 'Working With Creators',
-  //       6: "Do's & Don't For Ad Creatives",
-  //       7: 'Post-Production Editing',
-  //     },
-  //   ],
-  // },
   {
     url: '/images/handshake.jpeg',
     title: 'Alignment',
@@ -196,18 +141,34 @@ export const processData = [
       },
     ],
   },
-  // {
-  //   url: '/images/graph.jpeg',
-  //   title: 'Analysis',
-  //   steps: [
-  //     {
-  //       1: 'Biweekly Report & Analysis',
-  //       2: 'Key Insights From Test',
-  //       3: 'Recoding Sprint Results',
-  //       4: 'Winning Creative & Copy Storage',
-  //       5: 'Iterations on Winning Assets',
-  //       6: 'Next Steps',
-  //     },
-  //   ],
-  // },
+  {
+    url: '/images/graph.jpeg',
+    title: 'Analysis',
+    steps: [
+      {
+        step: 'Biweekly Report & Analysis',
+        key: 'Analysis1',
+      },
+      {
+        step: 'Key Insights From Test',
+        key: 'Analysis2',
+      },
+      {
+        step: 'Recoding Sprint Results',
+        key: 'Analysis3',
+      },
+      {
+        step: 'Winning Creative & Copy Storage',
+        key: 'Analysis4',
+      },
+      {
+        step: 'Iterations on Winning Assets',
+        key: 'Analysis5',
+      },
+      {
+        step: 'Next Steps',
+        key: 'Analysis6',
+      },
+    ],
+  },
 ];
