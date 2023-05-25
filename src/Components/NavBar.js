@@ -52,19 +52,6 @@ const NavBar = () => {
             </li>
             <li className='nav-item'>
               <LinkS
-                to='services'
-                className='nav-links'
-                onClick={closeMobileMenu}
-                spy={true}
-                smooth={true}
-                offset={-110}
-                duration={500}
-              >
-                Services
-              </LinkS>
-            </li>
-            <li className='nav-item'>
-              <LinkS
                 to='the-process'
                 className='nav-links'
                 onClick={closeMobileMenu}
@@ -74,6 +61,19 @@ const NavBar = () => {
                 duration={500}
               >
                 The Process
+              </LinkS>
+            </li>
+            <li className='nav-item'>
+              <LinkS
+                to='services'
+                className='nav-links'
+                onClick={closeMobileMenu}
+                spy={true}
+                smooth={true}
+                offset={-110}
+                duration={500}
+              >
+                Services
               </LinkS>
             </li>
             <li className='nav-item'>
