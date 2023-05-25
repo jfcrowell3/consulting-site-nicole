@@ -60,7 +60,7 @@ const NavBar = () => {
                 offset={-300}
                 duration={500}
               >
-                The Process
+                The Game Plan
               </LinkS>
             </li>
             <li className='nav-item'>
