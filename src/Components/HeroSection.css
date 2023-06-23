@@ -7,8 +7,6 @@ video {
 }
 
 .hero-container {
-  /* background: url('../../public/images/img-home.jpg') center center/cover
-    no-repeat; */
   height: 87vh;
   width: 100%;
   display: flex;
@@ -16,10 +14,6 @@ video {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
-  /* object-fit: contain; */
-  /* padding-left: 10vw;
-  padding-right: 10vw; */
 }
 
 .headline {
@@ -31,7 +25,7 @@ video {
 }
 
 .headline h1 {
-  min-width: 85vw;
+  width: 85vw;
   text-align: center;
 }
 
@@ -44,40 +38,30 @@ video {
   text-align: center;
 }
 
-.hero-btns {
-  margin-top: 32px;
-}
+@media screen and (max-width: 1440px) {
+  .headline h1 {
+    max-width: 65vw;
+    margin-bottom: 4vh;
+  }
 
-.hero-btns .btn {
-  margin: 6px;
-}
-
-@media screen and (max-width: 960px) {
-  .hero-container > h1 {
-    font-size: 70px;
-    margin-top: 150px;
-    text-align: center;
+  .hero-container p {
+    max-width: 80vw;
+    /* margin-bottom: 4vh; */
   }
 }
 
 @media screen and (max-width: 768px) {
-  .hero-container > h1 {
-    font-size: 50px;
-    margin-top: 50px;
-    text-align: center;
+  .headline {
+    margin-top: 4vh;
+  }
+  .headline h1 {
+    font-size: 3rem;
+  }
+  .hero-container {
+    height: 100%;
   }
 
   .hero-container > p {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .btn-mobile {
-    display: block;
-    text-decoration: none;
-  }
-
-  .btn {
-    width: 100%;
+    font-size: 1.3rem;
   }
 }

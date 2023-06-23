@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Services.css';
-import { Button } from './Button';
 
 const Services = () => {
   const [readMore, setReadMore] = useState(false);
@@ -18,17 +18,12 @@ const Services = () => {
             <img src='/images/img-1.jpg' alt='' />
           </div>
           <div className={readMore ? 'expanded-div' : 'hidden-div'}>
-            <ul>
-              <li>One FREE 15min intro call</li>
-              <li>30, 45, or 60min call</li>
-              <li>Short form Q&A</li>
-              <li>Quick audit of Facebook, Instagram or Tiktok account</li>
-              <li>Tips on how to save time and money</li>
-              <li>All calls can be recorded by you and saved forever</li>
+            <ul className={readMore ? 'show-list' : 'hide-list'}>
+              <li>1-Off Consulting Calls</li>
+              <li>A Creative Evaluation / Audit</li>
+              <li>1-Off Briefs/Projects</li>
+              <li>1-Time Creative Operations Set Ups</li>
             </ul>
-            <div className='button-container'>
-              <button className='book-btn'>Schedule One-time Call</button>
-            </div>
           </div>
         </div>
         <div className='services-wrapper'>
@@ -37,17 +32,21 @@ const Services = () => {
             <img src='/images/lightbulb.jpg' alt='Lightbulb in hand' />
           </div>
           <div className={readMore ? 'expanded-div' : 'hidden-div'}>
-            <ul>
-              <li>4 tiers of monthly services</li>
-              <li>A package and price for everyone</li>
-              <li>Point 1</li>
-              <li>Point 1</li>
+            <ul className={readMore ? 'show-list' : 'hide-list'}>
+              <li>Ongoing Consulting</li>
+              <li>Fraction Creative Strategy Services</li>
+              <li>Month to Month Projects</li>
+              <li>Coaching or Mentorship</li>
             </ul>
-            <div className='button-container'>
-              <button className='book-btn'>Schedule Recurring Call</button>
-            </div>
           </div>
         </div>
+      </div>
+      <div className='button-container'>
+        <Link to='https://calendly.com/nicolecrowell/15-mins-call-w-nicole-crowell-website'>
+          <button className='book-btn' type='button'>
+            Book A Call
+          </button>
+        </Link>
       </div>
       <i
         className={readMore ? 'fas fa-angle-up' : 'fas fa-angle-down'}

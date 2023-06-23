@@ -57,7 +57,7 @@ const NavBar = () => {
                 onClick={closeMobileMenu}
                 spy={true}
                 smooth={true}
-                offset={-300}
+                offset={-280}
                 duration={500}
               >
                 The Game Plan
@@ -83,20 +83,20 @@ const NavBar = () => {
                 onClick={closeMobileMenu}
                 spy={true}
                 smooth={true}
-                offset={-110}
+                offset={-120}
                 duration={500}
               >
                 About Me
               </LinkS>
             </li>
             <li>
-              <LinkS
-                to='/sign-up'
+              <LinkR
+                to='https://calendly.com/nicolecrowell/15-mins-call-w-nicole-crowell-website'
                 className='nav-links-mobile'
-                onClick={closeMobileMenu}
+                // onClick={closeMobileMenu}
               >
                 Book A Call
-              </LinkS>
+              </LinkR>
             </li>
           </ul>
         </div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { useEffect } from 'react';
-// import { Button } from './Button';
 import './HeroSection.css';
 import '../App.css';
 import EmailCapture from './EmailCapture';
