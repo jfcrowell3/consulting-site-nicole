@@ -21,10 +21,9 @@
 }
 
 .services-wrapper {
-  width: 25rem;
   padding: 2vw;
   margin: 1vw;
-  flex: 0 1 450px;
+  flex: 0 1 500px;
 }
 
 .services-wrapper h2 {
