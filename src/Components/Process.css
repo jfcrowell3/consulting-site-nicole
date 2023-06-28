@@ -10,14 +10,12 @@
   margin: 1rem 4rem;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 80vw;
-  align-self: center;
 }
 
 .card-container {
   padding: 2vw;
   margin: 1vw;
-  flex: 0 1 500px;
+  flex: 0 1 400px;
 }
 
 .img-wrapper {

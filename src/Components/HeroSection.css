@@ -1,7 +1,7 @@
 video {
   object-fit: cover;
-  width: 100%;
   height: 100%;
+  width: 100%;
   position: fixed;
   z-index: -1;
 }
@@ -12,7 +12,6 @@ video {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
@@ -39,14 +38,27 @@ video {
 }
 
 @media screen and (max-width: 1440px) {
+  video {
+    object-fit:stretch;
+    min-height: 60rem;
+  }
+
+  .hero-container {
+    height: 50rem;
+  }
+
+  .headline {
+    margin: 0 auto;
+  }
+
   .headline h1 {
     max-width: 65vw;
-    margin-bottom: 4vh;
+    margin-bottom: 2rem;
   }
 
   .hero-container p {
     max-width: 80vw;
-    /* margin-bottom: 4vh; */
+    margin-bottom: 4vh;
   }
 }
 
@@ -58,7 +70,7 @@ video {
     font-size: 3rem;
   }
   .hero-container {
-    height: 100%;
+    height: 100vh;
   }
 
   .hero-container > p {
