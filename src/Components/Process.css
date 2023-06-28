@@ -7,16 +7,17 @@
 
 .process {
   display: flex;
-  margin: 1rem 2rem;
+  margin: 1rem 4rem;
   flex-wrap: wrap;
   justify-content: space-around;
+  max-width: 80vw;
+  align-self: center;
 }
 
 .card-container {
-  width: 25rem;
   padding: 2vw;
   margin: 1vw;
-  flex: 0 1 450px;
+  flex: 0 1 500px;
 }
 
 .img-wrapper {
@@ -28,7 +29,6 @@
 
 .process-section img {
   width: 100%;
-  height: 100%;
 }
 
 .process-section ul {
