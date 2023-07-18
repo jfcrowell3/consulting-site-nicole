@@ -11,7 +11,15 @@ const HeroSection = () => {
 
   return (
     <div className='hero-container' id='home'>
-      <video src='/videos/video-2.mp4' poster='/images/img-7.png' autoPlay loop muted playsinline/>
+      <video
+        src='/videos/video-2.mp4'
+        poster='/images/img-7.png'
+        autoPlay
+        loop
+        muted
+        playsinline
+        controls=''
+      />
       <div className='headline'>
         <h1>Creative Strategy. Done Right.</h1>
       </div>
