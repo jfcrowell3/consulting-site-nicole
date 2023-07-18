@@ -54,6 +54,9 @@
   .process {
     max-width: 80vw;
   }
+  .card-container {
+    flex: 1 0 300px;
+  }
   .card-item h2 {
     text-align: center;
   }

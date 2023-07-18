@@ -127,9 +127,12 @@
     flex-direction: column;
     justify-content: center;
     align-self: center;
+    flex-wrap: nowrap;
   }
   .services-wrapper {
     width: 100%;
+    flex: 0 0 0;
+    margin: 0;
   }
   .services-wrapper h2 {
     font-size: 1.8rem;

@@ -24,7 +24,7 @@ const Brands = ({ deviceType }) => {
         // keyBoardControl={true}
         // // customTransition='all .5'
         // transitionDuration={800}
-        // containerClass='carousel-container'
+        containerClass='carousel-container'
         removeArrowOnDeviceType={['tablet', 'mobile', 'desktop']}
         // deviceType={deviceType}
         // dotListClass='custom-dot-list-style'
