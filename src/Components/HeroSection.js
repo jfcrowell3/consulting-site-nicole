@@ -12,8 +12,8 @@ const HeroSection = () => {
   return (
     <div className='hero-container' id='home'>
       <video
-        src='/videos/video-2.mp4'
-        poster='/images/img-7.png'
+        src='https://www.performancepurple.com/videos/video-2.mp4'
+        // poster='/images/img-7.png'
         autoPlay
         loop
         muted
